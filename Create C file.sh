@@ -1,0 +1,16 @@
+a="#include <stdio.h>"
+b="#include <stdlib.h>"
+c=""
+d="int main(){"
+e="return 0;"
+f="}"
+
+
+echo $a >> "$1.c"
+echo $b >> "$1.c"
+echo $c >> "$1.c"
+echo $d >> "$1.c"
+echo "" >> "$1.c"
+echo '	'$e >> "$1.c"
+echo $f >> "$1.c"
+open "$1.c"
